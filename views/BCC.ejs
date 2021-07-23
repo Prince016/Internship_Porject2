@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>ListAny Template</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="header_sticky">
+    <!-- Preloader -->
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
+
+    <!-- Boxed -->
+    <div class="boxed">
+
+        <!-- Header -->
+        <header id="header" class="header clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div id="log" class="log float-left">
+                            <a href="/home/" rel="home">
+                                <img src="/images/newlogo.png" alt="image">
+                            </a>
+                        </div>
+                        <!-- /.logo -->
+                        <div class="btn-menu">
+                            <span></span>
+                        </div>
+                        <!-- //mobile menu button -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-8">
+                        <div class="nav-wrap">
+                            <nav id="mainnav" class="mainnav float-left">
+                                <ul class="menu">
+                                    <li class="home">
+                                        <a href="/home">Home</a>
+                                    </li>
+                                    <li><a href="/listingfull">Listing</a>
+                                        <!-- <ul class="submenu"> 
+                                        <li><a href="listing-grid.html">Listing Grid</a>
+                                        </li>
+                                        <li><a href="listing-list.html">Listing List</a>
+                                        </li>
+                                         <li><a href="listing-full.html">Listing Full Width</a>
+                                        </li>
+                                         <li><a href="listing-map1.html">Listing Map V1</a>
+                                        </li>
+                                         <li><a href="listing-map2.html">Listing Map V2</a>
+                                        </li>
+                                         <li><a href="listing-single.html">Listing Single</a>
+                                        </li>
+                                    </ul>/.submenu -->
+                                    </li>
+                                    <li><a href="/blog>">Blog</a>
+
+                                        <!-- /.submenu -->
+                                    </li>
+                                    <li><a href="/page-pricing">Pricing</a>
+                                        <!-- <ul class="submenu"> 
+                                        <li><a href="page-about.html">About Us</a>
+                                        </li>
+                                        <li><a href="page-services.html">Services</a>
+                                        </li>
+                                        <li><a href="page-user.html">User</a>
+                                        </li>
+                                        <li><a href="page-profile.html">User profile</a>
+                                        </li>
+                                        <li><a href="page-addlisting.html">Add Listing</a>
+                                        </li>
+                                        <li><a href="page-pricing.html">pricing</a>
+                                        </li>
+                                        <li><a href="page-contact.html">Contact Us</a>
+                                        </li>
+                                    </ul> -->
+                                    </li>
+                                    <!-- <li>
+                                        <a  href="/page-user/"><i class="fa fa-user"></i>User Name</a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a data-toggle="modal" href="#popup_register"><i class="fa fa-user-plus"></i> Register</a>
+                                    </li> -->
+                                </ul>
+                                <!-- /.menu -->
+                            </nav>
+                            <!-- /.mainnav -->
+
+                            <div class="button-addlist float-right">
+                                <button type="button" class="flat-button" onclick="gotolisting()">Add Listing</button>
+                            </div>
+                        </div>
+                        <!-- /.nav-wrap -->
+                    </div>
+                    <!-- /.col-lg-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <!-- Page title -->
+        <div class="page-title parallax parallax1">
+            <div class="section-overlay">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title-heading">
+                            <h1 class="title">BCC</h1>
+                        </div>
+                        <!-- /.page-title-captions -->
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li><a href="/home">Home</a></li>
+                                <li> - </li>
+                                <li>Blog Single</li>
+                            </ul>
+                        </div>
+                        <!-- /.breadcrumbs -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.page-title -->
+
+        <!-- Blog posts -->
+        <section class="main-content blog-posts blog-single">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="post-wrap">
+                            <article class="post clearfix">
+                                <div class="featured-post">
+                                    <img src="/images/blog/4.jpg" alt="image">
+                                </div>
+                                <!-- /.feature-post -->
+                                <div class="content-post">
+                                    <h3 class="title-post">BCC</h3>
+                                    <ul class="meta-post clearfix">
+                                        <!-- <li class="time">
+                                            January 22, 2017
+                                        </li> -->
+                                        <li class="categories">
+                                            <a href="#">Business</a>, <a href="#">Leasing</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.meta-post -->
+                                    <div class="entry excerpt">
+                                        <p>We aspire to build a unique brahmanic force that will operate as a compelling agent for change, both for the worldwide Brahman community and for society at large, as India's first Chamber of Commerce for Brahmins.
+                                            We will do our best to educate future generations about the eternal ideals of our priceless Vedic Hindu culture in a world that is increasingly influenced by western civilizations. We were, and will continue
+                                            to be, genuinely Indian brahmans who follow the arpan, samarpan, and tarpan principles. Brahmans have been known for their knowledge and wisdom since the beginning of time. We have a long line of renowned Brahmans
+                                            who have guided rulers and established statecraft as well as general rules for “sattvik” living, from Agastya to Chanakya to Narayana Murthy (of Infosys fame). If Chanakya could define statecraft in his Arthasastra
+                                            and be the brains behind the vast Mauryan Empire, we, the Brahmans of today, with our global reach, can achieve just as much, if not more. For all brahmans in the world, as well as everyone else. The way Chanakya,
+                                            the Brahman, used his intellect to aid Chandragupta and defeat the strong Nanda Empire symbolises pure dedication. We can be shrewd, sharp, clever, smart, or wise as humans. Wisdom combined with knowledge, of
+                                            which we brahmans are capable, is the ultimate. Different minds think in different ways. When the intelligent get together and combine wisdom with action, positive change occurs. We want to make this organisation
+                                            a gathering place for brahmans whose knowledge will inspire youth to take action. When like-minded people from the same group, regardless of their gotras, join together, life may be more pleasant, much more
+                                            enjoyable in all its magnificent colours and tints. Brahmans have been split and sidelined as a result of battles, muslim invasions, British occupations, and present Indian politics. Let us resurge as a community
+                                            through our organisation, sharing holidays, joys and sorrows, traditions, and the numerous perspectives of life. We can make alliances, friendships, and connections; we can heal; and, like Agastya, we can determine
+                                            destinies and apply modern Brahmastra to the greater good. We have the ability to both give and accept assistance. We have the ability to provide and receive moral assistance. We have the ability to learn and
+                                            educate. All of this is doable in this location. All that is required is some level of participation.
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="direction clearfix">
+                                        <!-- <div class="tag-single float-left">
+                                            <span>Tags:</span>
+                                            <a href="#"> Business,</a>
+                                            <a href="#"> Tax,</a>
+                                            <a href="#"> Finance</a>
+                                        </div> -->
+                                        <div class="social-links float-right">
+                                            <span>Share:</span>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.content-post -->
+                            </article>
+
+                            <div class="main-single">
+                                <div class="comments-area">
+
+                                    <!-- .comment-list -->
+
+                                    <div class="comment-respond" id="respond">
+                                        <h2 class="comment-reply-title">Leave a comment</h2>
+                                        <form novalidate="" class="comment-form clearfix" id="commentform" method="post" action="#">
+                                            <div class="wrap-input clearfix">
+                                                <p class="comment-notes">
+                                                    <input type="text" placeholder="Your Name" aria-required="true" size="30" value="" name="author" id="author">
+                                                </p>
+                                                <p class="comment-form-email">
+                                                    <input type="email" placeholder="Your Email" size="30" value="" name="email" id="email">
+                                                </p>
+                                            </div>
+                                            <p class="comment-form-comment">
+                                                <textarea class="" tabindex="4" placeholder="Message" name="comment" required></textarea>
+                                            </p>
+                                            <p class="form-submit">
+                                                <button class="comment-submit effect-button">Send Message</button>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <!-- /.comment-respond -->
+                                </div>
+                                <!-- /.comments-area -->
+                            </div>
+
+                        </div>
+                        <!-- /.post-wrap -->
+                    </div>
+                    <!-- /.col-lg-9 -->
+
+                    <!-- <div class="col-lg-3">
+                        <div class="sidebar">
+                            <div class="widget widget-recent-news">
+                                <h5 class="widget-title">Recent Post</h5>
+                                <ul class="popular-news clearfix">
+                                    <li>
+                                        <div class="text">
+                                            <h6>
+                                                <a href="#">
+                                            Why Do I Need To Use Financial ?
+                                            </a>
+                                            </h6>
+                                            <p>January 11, 2017</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <h6>
+                                                <a href="#">
+                                            Why your sales forecast is off
+                                            </a>
+                                            </h6>
+                                            <p>January 11, 2017</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <h6>
+                                                <a href="#">
+                                            6 tips to retain your top sales talent
+                                            </a>
+                                            </h6>
+                                            <p>January 11, 2017</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text">
+                                            <h6>
+                                                <a href="#">
+                                            What the martian can teach sales
+                                            </a>
+                                            </h6>
+                                            <p>January 11, 2017</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                /.popular-news
+                            <!-- </div> -->
+                    <!-- /.widget-popular-news -->
+                    <!-- <div class="widget widget_categories">
+                                <h5 class="widget-title">Category</h5>
+                                <ul>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">Finanve</a></li>
+                                    <li><a href="#">Insurance</a></li>
+                                    <li><a href="#">Leasing</a></li>
+                                </ul>
+                            </div> -->
+                    <!-- /.widget-categories -->
+
+                    <!-- <div class="widget widget_tag">
+                                <h5 class="widget-title">Tags</h5>
+                                <div class="tag-list">
+                                    <a href="#">Business</a>
+                                    <a href="#">Consulting</a>
+                                    <a href="#">Finanve</a>
+                                    <a href="#">Insurance</a>
+                                    <a href="#">Management</a>
+                                    <a href="#">Portfolio</a>
+                                </div> -->
+                </div>
+                <!-- /.widget-tag -->
+            </div>
+            <!-- /.sidebar -->
+    </div> -->
+    <!-- /.col-md-3 -->
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    </section>
+
+    <section class="flat-row v1 bg-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title-section">
+                        <h1 class="title">Newsletter</h1>
+                        <div class="sub-title">
+                            Subscribe now and receive weekly newsletter with
+                        </div>
+                    </div>
+                    <form id="subscribe-form" class="flat-mailchimp" method="post" action="#" data-mailchimp="true">
+                        <div class="field clearfix" id="subscribe-content">
+                            <p class="wrap-input-email">
+                                <input type="text" tabindex="2" id="subscribe-email" name="subscribe-email" placeholder="Your Email Here">
+                            </p>
+                            <p class="wrap-btn">
+                                <button type="button" id="subscribe-button" class=" subscribe-submit effect-button" title="Subscribe now">SUBSCRIBE</button>
+                            </p>
+                        </div>
+                        <div id="subscribe-msg"></div>
+                    </form>
+                </div>
+                <div class="col-lg-2">
+                    <div class="flat-counter text-center">
+                        <div class="content-counter">
+                            <div class="icon-count">
+                                <i class="ion-waterdrop"></i>
+                            </div>
+                            <div class="name-count">Listing</div>
+                            <div class="numb-count" data-to="1897" data-speed="2000" data-waypoint-active="yes">1897</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="flat-counter text-center">
+                        <div class="content-counter">
+                            <div class="icon-count">
+                                <i class="ion-pricetags"></i>
+                            </div>
+                            <div class="name-count">Categories</div>
+                            <div class="numb-count" data-to="967" data-speed="2000" data-waypoint-active="yes">967</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="flat-counter text-center">
+                        <div class="content-counter">
+                            <div class="icon-count">
+                                <i class="ion-ios-people"></i>
+                            </div>
+                            <div class="name-count">Users</div>
+                            <div class="numb-count" data-to="1101" data-speed="2000" data-waypoint-active="yes">1101</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-widgets">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget widget_text widget_info">
+                        <h5 class="widget-title">About Us</h5>
+                        <div class="textwidget">
+                            <p>The BCC unit of the Brahman Organization of India is one of the largest non-profit platforms in India, with the most listing categories. We work in practically every industry, therefore we can make a difference in any! We welcome
+                                Brahmins from all industries to join our network of enterprises. Automobiles, education, electronics, business-to-business services such as advertising, are just a few examples and a variety of other industries.</p>
+                        </div>
+                        <!-- /.textwidget -->
+                        <ul class="flat-infomation">
+                            <li><i class="fa fa-map-marker"></i>PO Box 16122 Collins Street West Vic-toria 8007 Australia</li>
+                            <li><i class="fa fa-phone"></i>+61 3 8376 6284</li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div id="nav_menu-2" class="widget widget_nav_menu">
+                        <h5 class="widget-title">Privacy Policy</h5>
+                        <div class="wrap-menufooter clearfix">
+                            <ul class="menu one-half">
+                                <li class="menu-item"><a href="#">About Us</a></li>
+                                <!-- <li class="menu-item"><a href="#">Advertise</a></li> -->
+                                <li class="menu-item"><a href="#">Terms & Conditions</a></li>
+                                <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                                <li class="menu-item"><a href="#">FAQs</a></li>
+                                <li class="menu-item"><a href="#">Blog</a></li>
+                            </ul>
+                            <ul class="menu one-half">
+                                <!-- <li class="menu-item"><a href="#">Method Payment</a></li>
+                            <li class="menu-item"><a href="#">Maintenance</a></li>
+                            <li class="menu-item"><a href="#">Corporate Client</a></li>
+                            <li class="menu-item"><a href="#">LearnPress</a></li>
+                            <li class="menu-item"><a href="#">Release Status</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div class="widget widget_listing">
+                        <h5 class="widget-title">Popular Listing</h5>
+                        <ul>
+                            <li class="clearfix">
+                                <div class="featured">
+                                    <a href="#" class="effect"><img src="/images/flickr/7.jpg" alt="image"></a>
+                                </div>
+                                <div class="info-listing">
+                                    <h6><a href="#">Lincoln Square Steak</a></h6>
+                                    <div class="start-review">
+                                        <span class="flat-start">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                        <a href="#" class="review">12 Reviews</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="featured">
+                                    <a href="#" class="effect"><img src="/images/flickr/8.jpg" alt="image"></a>
+                                </div>
+                                <div class="info-listing">
+                                    <h6><a href="#">Top 10 French coffe </a></h6>
+                                    <div class="start-review">
+                                        <span class="flat-start">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                        <a href="#" class="review">7 Reviews</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.col-lg-3 -->
+
+                <div class="col-lg-3">
+                    <div class="widget widget_contact">
+                        <h5 class="widget-title">Gallery</h5>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/1.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/2.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/3.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/4.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/5.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <a href="#" class="effect">
+                                        <img src="/images/flickr/6.jpg" alt="image">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="container">
+            <div class="bottom">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="copyright">
+                            <p>Copyright © 2021. Developed by Evren Global Solutions. All Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.col-md-12 -->
+                    <div class="col-md-6 col-sm-6">
+                        <div class="social-links float-right">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade flat-popupform" id="popup_login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center clearfix">
+                    <form class="form-login form-listing" action="#" method="post">
+                        <h3 class="title-formlogin">Log in</h3>
+                        <span class="input-login icon-form"><input type="text" placeholder="Your Name*" name="email" required="required"><i class="fa fa-user"></i></span>
+                        <span class="input-login icon-form"><input type="text" placeholder="Password*" name="password" required="required"><i class="fa fa-lock"></i></span>
+                        <div class="flat-fogot clearfix">
+                            <label class="float-left">
+                                   <span class="input-check">
+                                        <input type="checkbox" name="check" value="0" checked="">
+                                        <span class="remember">Remember me</span> 
+                                    </span>
+                                </label>
+                            <label class="float-right link-register">
+                                    <a href="#">Lost your password?</a>
+                                </label>
+                        </div>
+                        <span class="wrap-button">
+                                <button type="button" id="login-button" class=" login-btn effect-button" title="log in">LOG IN</button>
+                            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade flat-popupform" id="popup_register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center clearfix">
+                    <form class="form-login form-listing" action="#" method="post">
+                        <h3 class="title-formlogin">Sign-Up for Brahman Chamber of Commerce</h3>
+                        <span class="input-login icon-form"><input type="text" placeholder="Your Name*" name="name" required="required"><i class="fa fa-user"></i></span>
+                        <span class="input-login icon-form"><input type="text" placeholder="E-mail*" name="email" required="required"><i class="fa fa-envelope-o"></i></span>
+                        <span class="input-login icon-form"><input type="number" placeholder="Mobile Number*" name="mobile" required="required"><i class="fa fa-phone"></i></span>
+                        <span class="input-login icon-form"><input type="text" placeholder="Company Name*" name="company" required="required"><i class="fa fa-building"></i></span>
+                        <span class="input-login icon-form"><input type="text" placeholder="Password*" name="password" required="required"><i class="fa fa-lock"></i></span>
+                        <span class="input-login icon-form"><input type="text" placeholder="Confirm Password*" name="password" required="required"><i class="fa fa-lock"></i></span>
+                        <div class="wrap-button signup">
+                            <button type="button" id="logup-button" class=" login-btn effect-button" title="log in">PAY & REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Go Top -->
+    <a class="go-top effect-button">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/tether.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery.easing.js"></script>
+    <script src="/javascript/jquery-waypoints.js"></script>
+    <script src="/javascript/jquery-countTo.js"></script>
+    <script src="/javascript/jquery.cookie.js"></script>
+    <script src="/javascript/parallax.js"></script>
+    <script src="/javascript/smoothscroll.js"></script>
+
+    <script src="/javascript/main.js"></script>
+    <script>
+        function gotoaddlisting() {
+            location.href = "/addListingPage/"
+        }
+    </script>
+</body>
+
+</html>

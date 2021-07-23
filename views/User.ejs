@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+    <title>ListAny Template</title>
+
+    <meta name="author" content="themesflat.com" />
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css" />
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="/revolution/css/layers.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/revolution/css/settings.css"
+    />
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon and touch icons  -->
+    <link
+      href="icon/apple-touch-icon-48-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+      sizes="48x48"
+    />
+    <link
+      href="icon/apple-touch-icon-32-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+    />
+    <link href="icon/favicon.png" rel="shortcut icon" />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .CouponDetails {
+        margin: 40px;
+        overflow-y: auto;
+      }
+
+      .CouponDetails thead th {
+        color: #e8280b;
+        font-weight: bold;
+      }
+
+      .footer {
+      }
+
+      .createcoupon {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      /* .createcoupon input {
+            width: 19%;
+        } */
+
+      .createcoupon button {
+        /* border: 5px solid black; */
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+
+      .createcoupon form {
+        width: 100%;
+      }
+
+      .createcoupon .set {
+        width: 18%;
+        border: 1px solid black;
+      }
+
+      .menu li a {
+        text-decoration: none;
+      }
+
+      .home a {
+        color: #e8280b;
+      }
+
+      .user a {
+        color: #e8280b;
+      }
+
+      .plan a {
+        color: #e8280b;
+      }
+    </style>
+    <style>
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body class="header_sticky">
+    <!-- Preloader -->
+    <section class="loading-overlay">
+      <div class="Loading-Page">
+        <h2 class="loader">Loading</h2>
+      </div>
+    </section>
+
+    <!-- Boxed -->
+    <div class="boxed">
+      <!-- Header -->
+      <header id="header" class="header clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div id="log" class="log float-left">
+                <a href="index.html" rel="home">
+                  <img
+                    src="/images/newlogo.png"
+                    alt="image"
+                    width="200px"
+                    height="200px"
+                  />
+                </a>
+              </div>
+              <!-- /.logo -->
+              <div class="btn-menu">
+                <span></span>
+              </div>
+              <!-- //mobile menu button -->
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-8">
+              <div class="nav-wrap">
+                <nav id="mainnav" class="mainnav float-left">
+                  <ul class="menu">
+                    <li class="home">
+                      <a
+                        href="http://localhost:3000/admin/createCoupon/User.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="user">
+                      <a href="http://localhost:3000/admin/getAllUsers/"
+                        >User</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- /.menu -->
+                </nav>
+                <!-- /.mainnav -->
+              </div>
+              <!-- /.nav-wrap -->
+            </div>
+            <!-- /.col-lg-8 -->
+          </div>
+          <!-- /.row -->
+        </div>
+      </header>
+      <!-- /.header -->
+
+      <div class="CouponDetails">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+
+              <th scope="col">Email</th>
+              <th scope="col">Name</th>
+              <th scope="col">Mobile No</th>
+              <th scope="col">companyName</th>
+              <!-- <th scope="col"> Date</th> -->
+              <th scope="col">Plan</th>
+              <th scope="col">User Activation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- email, name, mobileNumber, companyName, plan -->
+            <% for(var i=0; i < allusers.length; i++) { %>
+            <tr>
+              <th scope="row"><%= [i+1] %></th>
+
+              <td><%= allusers[i].email %></td>
+
+              <td><%= allusers[i].name %></td>
+              <td><%= allusers[i].mobileNumber %></td>
+              <td><%= allusers[i].companyName %></td>
+              <!-- <td>
+                                <%= allusers[i].date %>
+                            </td> -->
+              <td><%= allusers[i].plan %></td>
+              <td>
+                <div class="form-check form-switch">
+                  <label class="switch">
+                    <% if(allusers[i].access == 'allowed'){ %> <input
+                    onclick="toggle('<%= allusers[i].email %>')" type="checkbox"
+                    / checked> <% } else{ %>
+                    <input
+                      onclick="toggle('<%= allusers[i].email %>')"
+                      type="checkbox"
+                      name="t1"
+                    />
+                    <% } %>
+
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </td>
+            </tr>
+
+            <% allusers[i].email %> <% } %>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <div class="createcoupon ">
+            <form action=" ">
+
+                <input type="text " name="couponname " id="couponname " class="set " placeholder="enter couon code " />
+                <input type="date " name="coupondata " id="coupondate " class="set " />
+                <input type="number " name="couponamount " id="couponamount " placeholder="Enter Amount " class="set " />
+                <input type="number " name="couponamount " id="couponamount " class="set " placeholder="No. of users that can use this coupon " />
+
+                <button type="submit ">Create Coupon</button>
+
+            </form>
+
+        </div> -->
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Javascript -->
+    <script src="/javascript/jquery.min.js "></script>
+    <script src="/javascript/tether.min.js "></script>
+    <script src="/javascript/bootstrap.min.js "></script>
+    <script src="/javascript/jquery.easing.js "></script>
+    <script src="/javascript/jquery-waypoints.js "></script>
+    <script src="/javascript/jquery-countTo.js "></script>
+    <script src="/javascript/owl.carousel.js "></script>
+    <script src="/javascript/jquery.cookie.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js "></script>
+    <script src="/javascript/parallax.js "></script>
+    <script src="/javascript/bootstrap-slider.min.js "></script>
+    <script src="/javascript/smoothscroll.js "></script>
+
+    <script src="/javascript/main.js "></script>
+
+    <!-- Revolution Slider -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js "></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js "></script>
+    <script src="revolution/js/slider.js "></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.carousel.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js "></script>
+    <script src="revolution/js/extensions/revolution.extension.video.min.js "></script>
+    <script>
+      async function toggle(email) {
+        console.log("Click on the toggle ", email);
+        const serverResponse = await fetch("/admin/accessToggle/" + email, {
+          method: "post",
+        });
+        let jsonBody = await serverResponse.json();
+
+        if (jsonBody) {
+          alert(jsonBody.email + " " + jsonBody.action);
+        }
+      }
+    </script>
+  </body>
+</html>

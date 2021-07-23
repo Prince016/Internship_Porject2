@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+    <title>ListAny Template</title>
+
+    <meta name="author" content="themesflat.com" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css" />
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="/revolution/css/layers.css" />
+    <link rel="stylesheet" type="text/css" href="/revolution/css/settings.css" />
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css" />
+
+    <!-- Favicon and touch icons  -->
+    <link href="/icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48" />
+    <link href="/icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed" />
+    <link href="/icon/favicon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- razorpay -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <!-- ajex search bar -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+
+    <script src="/javascript/bootstrap3-typeahead.min.js"></script>
+</head>
+
+<body class="header_sticky">
+    <!-- Preloader -->
+    <!-- <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>  -->
+
+    <!-- Boxed -->
+    <div class="boxed">
+        <!-- Header -->
+        <header id="header" class="header clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div id="log" class="log float-left">
+                            <a href="#" rel="home">
+                                <img src="/images/newlogo.png" alt="image" width="200px" height="200px">
+                            </a>
+                        </div>
+                        <!-- /.logo -->
+                        <div class="btn-menu">
+                            <span></span>
+                        </div>
+                        <!-- //mobile menu button -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-8">
+                        <div class="nav-wrap">
+                            <nav id="mainnav" class="mainnav float-left">
+                                <ul class="menu">
+                                    <li class="home">
+                                        <a href="/homes">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/listingfull">Listing</a>
+                                        <!-- <ul class="submenu"> 
+                                        <li><a href="listing-grid.html">Listing Grid</a>
+                                        </li>
+                                        <li><a href="listing-list.html">Listing List</a>
+                                        </li>
+                                         <li><a href="listing-full.html">Listing Full Width</a>
+                                        </li>
+                                         <li><a href="listing-map1.html">Listing Map V1</a>
+                                        </li>
+                                         <li><a href="listing-map2.html">Listing Map V2</a>
+                                        </li>
+                                         <li><a href="listing-single.html">Listing Single</a>
+                                        </li>
+                                    </ul>/.submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="/blog">Blog</a>
+
+                                        <!-- /.submenu -->
+                                    </li>
+                                    <li>
+                                        <a href="/page-pricing">Pricing</a>
+                                        <!-- <ul class="submenu"> 
+                                        <li><a href="page-about.html">About Us</a>
+                                        </li>
+                                        <li><a href="page-services.html">Services</a>
+                                        </li>
+                                        <li><a href="page-user.html">User</a>
+                                        </li>
+                                        <li><a href="page-profile.html">User profile</a>
+                                        </li>
+                                        <li><a href="page-addlisting.html">Add Listing</a>
+                                        </li>
+                                        <li><a href="page-pricing.html">pricing</a>
+                                        </li>
+                                        <li><a href="page-contact.html">Contact Us</a>
+                                        </li>
+                                    </ul> -->
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#popup_login"><i class="fa fa-user"></i> Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#popup_register"><i class="fa fa-user-plus"></i> Register</a>
+                                    </li>
+                                </ul>
+                                <!-- /.menu -->
+                            </nav>
+                            <!-- /.mainnav -->
+
+                            <div class="button-addlist float-right">
+                                <button type="button" class="flat-button" data-toggle="modal" href="#popup_register">
+                  Add Listing
+                </button>
+                            </div>
+                        </div>
+                        <!-- /.nav-wrap -->
+                    </div>
+                    <!-- /.col-lg-8 -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="
+          margin: 0px auto;
+          background-color: transparent;
+          padding: 0px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        ">
+            <!-- START REVOLUTION SLIDER 5.3.0.2 auto mode -->
+            <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display: none" data-version="5.3.0.2">
+                <div class="slotholder"></div>
+                <ul>
+                    <!-- SLIDE  -->
+
+                    <!-- SLIDE 1 -->
+                    <li data-index="rs-3050" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off"
+                        data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/slides/background.jpg" alt="" data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                            data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption title-slide" id="slide-3050-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-128','-128','-128','-50']" data-fontsize="['65','65','45','30']"
+                            data-lineheight="['65','65','45','35']" data-fontweight="['600','600','600','600']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]" style="z-index: 16; white-space: nowrap;color: white;">
+                            BRAHMAN CHAMBER OF COMMERCE
+                            <br>
+                            <br><br>
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption sub-title" id="slide-3050-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-32','-32','-32','20']" data-fontsize="['20',20','20','14']"
+                            data-lineheight="['35','35','35','20']" data-fontweight="['300','300','300','300']" data-width="['1200','660','660','350']" data-height="none" data-whitespace="['nowrap',normal','normal','normal']" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; color: white; height: 200px;">
+                            <p>The BCC unit of the Brahman Organization of India is one of the largest non-profit platforms in India, with the most listing categories.</p>
+                            <p> We work in practically every industry, therefore we can make a difference in any! We welcome Brahmins from all industries to join our network of enterprises.</p>
+                            <p> Automobiles, education, electronics, business-to-business services such as advertising, are just a few examples and a variety of other</p>
+                            <p> industries. We offer a large number of listings, each with numerous subcategories</p>
+                            <!-- <span>just one click </span> Our website will provide you with
+               reliable <br />
+               addresses best price for the nearest address -->
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 2 -->
+                    <li data-index="rs-3051" data-transition="slideremovedown" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off"
+                        data-title="Ken Burns" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <!-- replace this  -->
+                        <img src="/images/slides/background.jpg" alt="" data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0"
+                            data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina />
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption title-slide" id="slide-3051-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-128','-128','-128','-50']" data-fontsize="['65','65','45','30']"
+                            data-lineheight="['65','65','45','35']" data-fontweight="['600','600','600','600']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0" data-paddingleft="[0,0,0,0]" style="z-index: 16; white-space: nowrap;color: white;">
+                            BRAHMAN CHAMBER OF COMMERCE
+                            <br>
+                            <br><br>
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption sub-title" id="slide-3051-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-32','-32','-32','20']" data-fontsize="['20',20','20','14']"
+                            data-lineheight="['35','35','35','20']" data-fontweight="['300','300','300','300']" data-width="['1200','660','660','300']" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; white-space: nowrap; color: white;">
+                            <p>The BCC unit of the Brahman Organization of India is one of the largest non-profit platforms in India, with the most listing categories.</p>
+                            <p> We work in practically every industry, therefore we can make a difference in any! We welcome Brahmins from all industries to join our network of enterprises.</p>
+                            <p> Automobiles, education, electronics, business-to-business services such as advertising, are just a few examples and a variety of other</p>
+                            <p> industries. We offer a large number of listings, each with numerous subcategories</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+
+        <div class="container">
+            <div class="wrap-form">
+                <div class="flat-formsearch">
+                    <form name="searchform" novalidate="" class="search-form form-filter clearfix" id="searchform">
+                        <span class="input-question">
+              <input type="text" placeholder="What are your looking for ?" name="businessName" id="question" />
+            </span>
+                        <span class="input-location">
+              <input type="text" placeholder="Location" name="address" id="location" />
+              <!-- <i class="fa fa-map-marker"></i> -->
+              <span class="filter">
+                <input id="ex8" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="10"
+                  data-slider-step="1" data-slider-value="5" />
+              </span>
+                        </span>
+                        <span name="category" class="select">
+              <select>
+                <option>All Categories </option>
+                <option>Autos</option>
+                <option>Business To Business</option>
+                <option>Community</option>
+                <option>Education</option>
+                <option>Electronics</option>
+                <option>Entertainment & Arts</option>
+                <option>Food & Dining</option>
+                <option>Health & Beauty</option>
+                <option>Home & Garden</option>
+                <option>Legal & Finance</option>
+                <option>Professional Service</option>
+                <option>Real Estate</option>
+                <option>Recreation</option>
+                <option>Retail Shopping</option>
+                <option>Travel</option>
+              </select>
+            </span>
+                        <span class="form-submit text-right">
+              <button class="flat-button">
+                Search <i class="fa fa-search"></i>
+              </button>
+            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="flat-row section-product bg-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section text-center">
+                            <h1 class="title">Searched Results</h1>
+                            <div class="sub-title">
+                                <!-- Some great addresses you should not miss -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="searchlist2" class="row">
+
+
+
+                    <!-- <div class="load-more text-center">
+                <button type="button" class="flat-button">Load More</button>
+              </div> -->
+
+                </div>
+            </div>
+        </section>
+        <section class="flat-row section-client">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section text-center">
+                            <h1 class="title">Categories</h1>
+
+                            <!-- <input
+                  class="typeahead tt-query"
+                  spellcheck="false"
+                  autocomplete="off"
+                  name="typeahead"
+                  type="text"
+                /> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="flat-client" data-item="4" data-nav="true" data-dots="false" data-auto="false">
+                            <div class="client">
+                                <div class="featured-client">
+                                    <img src="/images/clients/travel.jpg" alt="image" />
+                                </div>
+                                <div class="content-client clearfix">
+                                    <div class="icon">
+                                        <img src="/images/clients/icon1.png" alt="image" />
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#" title="">Hotel & Travel</a></h6>
+                                        <p>45 Listing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="featured-client">
+                                    <img src="/images/clients/health.jpg" alt="image" />
+                                </div>
+                                <div class="content-client clearfix">
+                                    <div class="icon">
+                                        <img src="/images/clients/icon2.png" alt="image" />
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#" title="">Healthy & fitness</a></h6>
+                                        <p>45 Listing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="featured-client">
+                                    <img src="/images/clients/realestate.jpg" alt="image" />
+                                </div>
+                                <div class="content-client clearfix">
+                                    <div class="icon">
+                                        <img src="/images/clients/icon3.png" alt="image" />
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#" title="">Real Estate</a></h6>
+                                        <p>45 Listing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="client">
+                                <div class="featured-client">
+                                    <img src="/images/clients/restaurant.jpg" alt="image" />
+                                </div>
+                                <div class="content-client clearfix">
+                                    <div class="icon">
+                                        <img src="/images/clients/icon4.png" alt="image" />
+                                    </div>
+                                    <div class="text">
+                                        <h6><a href="#" title="">Restaurant</a></h6>
+                                        <p>45 Listing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.flat-client -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flat-row section-product bg-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section text-center">
+                            <h1 class="title">Most Visited Places</h1>
+                            <div class="sub-title">
+                                Some great addresses you should not miss
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="list"></div>
+                <!-- <div class="row">
+            <div class="wrap-flat-product clearfix">
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/1.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          bar & coffe
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Grand Prairie Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/2.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          Restautrant
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">San Antonio Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/3.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          EAT & DRINK
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">San Angelo Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/4.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          bar & coffe
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Brownsville Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/5.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          Restautrant
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Beaumont Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/6.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          EAT & DRINK
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Corpus Christi Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/3.jpg" alt="image" />                
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          EAT & DRINK
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">San Angelo Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/4.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          bar & coffe
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Brownsville Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/1.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      <div class="button-product float-left">
+                        <button
+                          type="button"
+                          class="flat-button"
+                          onclick="location.href='#'"
+                        >
+                          bar & coffe
+                        </button>
+                      </div>
+                      <div class="start-review float-right">
+                        <span class="flat-start">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </span>
+                        <a href="#" class="review">( 2 reviewers )</a>
+                      </div>
+                    </div>
+                    <div class="info-product">
+                      <h6 class="title">
+                        <a href="#">Grand Prairie Restaurants</a>
+                      </h6>
+                      <a href="#" class="heart">
+                        <i class="fa fa-heart-o"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="load-more text-center">
+                <button type="button" class="flat-button">Load More</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </section>
+
+        <!-- <section class="flat-row section-download parallax parallax2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="flat-counter">
+                        <span class="over">Over</span>                            
+                        <div class="content-counter">
+                            <div class="numb-count" data-to="1512999" data-speed="1000" data-waypoint-active="yes">1,512,999</div>
+                        </div>
+                        <span class="download">Downloads</span>
+                    </div>
+                    <p>Yes, this is real Our application is already available for android and ios only with a touch  you will <br>easily find what do you want</p>
+                    <div class="flat-download">
+                        <button type="button" class="flat-button" onclick="location.href='#'"><i class="ion-social-android"></i>Download for Android</button>
+                        <button type="button" class="flat-button" onclick="location.href='#'"><i class="ion-social-apple"></i>Download for Apple</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+        <section class="flat-row blog-shortcode">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section style2">
+                            <h1 class="title">Latest Blogs</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="post clearfix">
+                            <div class="featured-post">
+                                <a href="blog-single.html"><img src="/images/blog/s1.jpg" alt="image" /></a>
+                                <!-- <ul class="post-comment">
+                    <li class="date">27</li>
+                    <li class="month">AUG</li>
+                  </ul> -->
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <!-- <ul class="meta-data clearfix">
+                    <li class="category">
+                      Posted in: <a href="#">Restaurant, </a
+                      ><a href="#">Hotel</a>
+                    </li>
+                    <li>by: <a href="#">admin</a></li>
+                  </ul> -->
+                                <!-- /.meta-post -->
+                                <h3 class="title-post">
+                                    <a href="blog-single.html"> Brahman Community </a>
+                                </h3>
+                                <p>
+                                    Brahmins are the highest-ranking of Hindu India's four varnas, or social castes. The Brahmans' exalted status dates from the late Vedic period, when Indo-European-speaking settlers in northern India were already...
+                                </p>
+                                <div class="more-link">
+                                    <a href="blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="post clearfix">
+                            <div class="featured-post">
+                                <a href="blog-single.html"><img src="/images/blog/s2.jpg" alt="image" /></a>
+                                <!-- <ul class="post-comment">
+                    <li class="date">21</li>
+                    <li class="month">DEC</li>
+                  </ul> -->
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <!-- <ul class="meta-data clearfix">
+                    <li class="category">
+                      Posted in: <a href="#">Restaurant, </a
+                      ><a href="#">Hotel</a>
+                    </li>
+                    <li>by: <a href="#">admin</a></li>
+                  </ul> -->
+                                <!-- /.meta-post -->
+                                <h3 class="title-post">
+                                    <a href="blog-single.html">
+                    BCC
+                  </a>
+                                </h3>
+                                <p>
+                                    We aspire to build a unique brahmanic force that will operate as a compelling agent for change, both for the worldwide Brahman community and for society at large, as India's first Chamber of Commerce for Brahmins. We will...
+                                </p>
+                                <div class="more-link">
+                                    <a href="blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <article class="post clearfix">
+                            <div class="featured-post">
+                                <a href="blog-single.html"><img src="/images/blog/s3.jpg" alt="image" /></a>
+                                <!-- <ul class="post-comment">
+                    <li class="date">18</li>
+                    <li class="month">JUN</li>
+                  </ul> -->
+                            </div>
+                            <!-- /.feature-post -->
+                            <div class="content-post">
+                                <!-- <ul class="meta-data clearfix">
+                    <li class="category">
+                      Posted in: <a href="#">Restaurant, </a
+                      ><a href="#">Hotel</a>
+                    </li>
+                    <li>by: <a href="#">admin</a></li>
+                  </ul> -->
+                                <!-- /.meta-post -->
+                                <h3 class="title-post">
+                                    <a href="/blog-single.html"> Add Listing</a>
+                                </h3>
+                                <p>
+                                    The BCC unit of the Brahman Organization of India is one of the largest non-profit platforms in India, with the most listing categories. We work in practically every industry, therefore we can make a difference in any! We welcome...
+                                </p>
+                                <div class="more-link">
+                                    <a href="/blog-single.html">Read More</a>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flat-row v1 bg-theme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="title-section">
+                            <h1 class="title">Newsletter</h1>
+                            <div class="sub-title">
+                                Subscribe now and receive weekly newsletter with
+                            </div>
+                        </div>
+                        <form id="subscribe-form" class="flat-mailchimp" method="post" action="#" data-mailchimp="true">
+                            <div class="field clearfix" id="subscribe-content">
+                                <p class="wrap-input-email">
+                                    <input type="text" tabindex="2" id="subscribe-email" name="subscribe-email" placeholder="Your Email Here" />
+                                </p>
+                                <p class="wrap-btn">
+                                    <button type="button" id="subscribe-button" class="subscribe-submit effect-button" title="Subscribe now">
+                    SUBSCRIBE
+                  </button>
+                                </p>
+                            </div>
+                            <div id="subscribe-msg"></div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="flat-counter text-center">
+                            <div class="content-counter">
+                                <div class="icon-count">
+                                    <i class="fa fa-tint"></i>
+                                </div>
+                                <div class="name-count">Listing</div>
+                                <div class="numb-count" data-to="1897" data-speed="2000" data-waypoint-active="yes">
+                                    1897
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="flat-counter text-center">
+                            <div class="content-counter">
+                                <div class="icon-count">
+                                    <i class="fa fa-tags"></i>
+                                </div>
+                                <div class="name-count">Categories</div>
+                                <div class="numb-count" data-to="967" data-speed="2000" data-waypoint-active="yes">
+                                    967
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="flat-counter text-center">
+                            <div class="content-counter">
+                                <div class="icon-count">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="name-count">Users</div>
+                                <div class="numb-count" data-to="1101" data-speed="2000" data-waypoint-active="yes">
+                                    1101
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget widget_text widget_info">
+                            <h5 class="widget-title">About Us</h5>
+                            <div class="textwidget">
+                                <p>The BCC unit of the Brahman Organization of India is one of the largest non-profit platforms in India, with the most listing categories. We work in practically every industry, therefore we can make a difference in any!
+                                    We welcome Brahmins from all industries to join our network of enterprises. Automobiles, education, electronics, business-to-business services such as advertising, are just a few examples and a variety of other industries.
+                                </p>
+                            </div>
+                            <!-- /.textwidget -->
+                            <ul class="flat-infomation">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>PO Box 16122 Collins Street West Vic-toria 8007 Australia
+                                </li>
+                                <li><i class="fa fa-phone"></i>+61 3 8376 6284</li>
+                            </ul>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /.col-lg-3 -->
+
+                    <div class="col-lg-3">
+                        <div id="nav_menu-2" class="widget widget_nav_menu">
+                            <h5 class="widget-title">Privacy Policy</h5>
+                            <div class="wrap-menufooter clearfix">
+                                <ul class="menu one-half">
+                                    <li class="menu-item"><a href="#">About Us</a></li>
+                                    <!-- <li class="menu-item"><a href="#">Advertise</a></li> -->
+                                    <li class="menu-item">
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                                    <li class="menu-item"><a href="#">FAQs</a></li>
+                                    <li class="menu-item"><a href="#">Blog</a></li>
+                                </ul>
+                                <ul class="menu one-half">
+                                    <!-- <li class="menu-item"><a href="#">Method Payment</a></li>
+                                <li class="menu-item"><a href="#">Maintenance</a></li>
+                                <li class="menu-item"><a href="#">Corporate Client</a></li>
+                                <li class="menu-item"><a href="#">LearnPress</a></li>
+                                <li class="menu-item"><a href="#">Release Status</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-3 -->
+
+                    <div class="col-lg-3">
+                        <div class="widget widget_listing">
+                            <h5 class="widget-title">Popular Listing</h5>
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="featured">
+                                        <a href="#" class="effect"><img src="/images/flickr/7.jpg" alt="image" /></a>
+                                    </div>
+                                    <div class="info-listing">
+                                        <h6><a href="#">Lincoln Square Steak</a></h6>
+                                        <div class="start-review">
+                                            <span class="flat-start">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                                            <a href="#" class="review">12 Reviews</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="featured">
+                                        <a href="#" class="effect"><img src="/images/flickr/8.jpg" alt="image" /></a>
+                                    </div>
+                                    <div class="info-listing">
+                                        <h6><a href="#">Top 10 French coffe </a></h6>
+                                        <div class="start-review">
+                                            <span class="flat-start">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                                            <a href="#" class="review">7 Reviews</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-3 -->
+
+                    <div class="col-lg-3">
+                        <div class="widget widget_contact">
+                            <h5 class="widget-title">Gallery</h5>
+                            <ul class="clearfix" id="footerGalley">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.col-md-3 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <div class="container">
+                <div class="bottom">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="copyright">
+                                <p>
+                                    Copyright © 2021. Developed by Evren Global Solutions. All Rights Reserved.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.col-md-12 -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="social-links float-right">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade flat-popupform" id="popup_login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+                    </div>
+                    <div class="modal-body text-center clearfix">
+                        <form class="form-login form-listing" id="signIn">
+                            <h3 class="title-formlogin">Log in</h3>
+                            <div class="email1 error"></div>
+                            <span class="input-login icon-form"><input type="text" placeholder="Your Name*" name="email"
+                  required="required" /><i class="fa fa-user"></i></span>
+                            <div class="password1 error"></div>
+                            <span class="input-login icon-form"><input type="password" placeholder="Password*" name="password"
+                  required="required" /><i class="fa fa-lock"></i></span>
+                            <div class="flat-fogot clearfix">
+                                <label class="float-left">
+                  <span class="input-check">
+                    <input type="checkbox" id="rem" name="check" value="0" checked="" />
+                    <label for="rem" class="remember">Remember me</label>
+                                </span>
+                                </label>
+                                <label class="float-right link-register">
+                  <a href="/userForgetPassword">Forget password?</a>
+                </label>
+                            </div>
+                            <span class="wrap-button">
+                <button type="submit" id="login-button" class="login-btn effect-button" title="log in">
+                  LOG IN
+                </button>
+              </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade flat-popupform" id="popup_register">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+                    </div>
+                    <div class="modal-body text-center clearfix">
+                        <form class="form-login form-listing" id="saveUser">
+                            <h3 class="title-formlogin">
+                                Sign-Up for Brahman Chamber of Commerce
+                            </h3>
+                            <span class="input-login icon-form"><input type="text" placeholder="Your Name*" id="name" name="name"
+                  required="required" /><i class="fa fa-user"></i></span>
+                            <div class="email error"></div>
+                            <span class="input-login icon-form"><input type="text" placeholder="E-mail*" id="email" name="email"
+                  required="required" /><i class="fa fa-envelope-o"></i></span>
+                            <div class="mobileNumber error"></div>
+                            <span class="input-login icon-form"><input type="number" placeholder="Mobile Number*" id="mobileNumber"
+                  name="mobileNumber" required="required" /><i class="fa fa-phone"></i></span>
+                            <span class="input-login icon-form"><input type="text" placeholder="Company Name*" id="companyName"
+                  name="companyName" required="required" /><i class="fa fa-building"></i></span>
+                            <div class="password error"></div>
+                            <span class="input-login icon-form"><input type="password" placeholder="Password*" name="password"
+                  required="required" /><i class="fa fa-lock"></i></span>
+                            <span class="input-login icon-form"><input type="password" name="confirmPassword"
+                  placeholder="Confirm Password*" id="password" name="password" required="required" /><i
+                  class="fa fa-lock"></i></span>
+                            <div class="wrap-button signup">
+                                <button type="submit" id="rzp" class="login-btn effect-button" title="log in">
+                  PAY & REGISTER
+                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Go Top -->
+        <a class="go-top effect-button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        </div>
+
+        <!-- Javascript -->
+        <script src="/javascript/jquery.min.js"></script>
+        <script src="/javascript/tether.min.js"></script>
+        <script src="/javascript/bootstrap.min.js"></script>
+        <script src="/javascript/jquery.easing.js"></script>
+        <script src="/javascript/jquery-waypoints.js"></script>
+        <script src="/javascript/jquery-countTo.js"></script>
+        <script src="/javascript/owl.carousel.js"></script>
+        <script src="/javascript/jquery.cookie.js"></script>
+        <script src="/https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="/javascript/parallax.js"></script>
+        <script src="/javascript/bootstrap-slider.min.js"></script>
+        <script src="/javascript/smoothscroll.js"></script>
+
+        <script src="/javascript/main.js"></script>
+
+        <!-- Revolution Slider -->
+        <script src="/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="/revolution/js/slider.js"></script>
+
+        <!-- payment gateway -->
+        <script>
+            //         axios.post('/order').then((info)=>{
+            //             console.log(info);
+
+            //             var options = {
+            //     "key": "rzp_test_YALeH69IqswJJf",
+
+            //     "name": "Acme Corp",
+            //     "description": "Test Transaction",
+            //     "image": "https://bit.ly/365z4r3",
+            //     "order_id": info.data.id,
+            //     "callback_url": "/is-order-complete/",
+
+            //     "theme": {
+            //         "color": "#3399cc"
+            //     }
+            // };
+            // var rzp1 = new Razorpay(options);
+
+            // document.getElementById('rzp-button1').onclick = function(e){
+            //     rzp1.open();
+            //     console.log();
+            //     let data = {
+            //       email:document.getElementById("email").value,
+            //       password:document.getElementById("password").value,
+            //       name:document.getElementById("name").value,
+            //       companyName:document.getElementById("companyName").value,
+            //       mobileNumber:document.getElementById("mobileNumber").value
+            //     }
+            //     fetch("/saveUser",{method:"post"
+            //     ,headers: {
+            //       'Content-Type': 'application/json'
+            //       // 'Content-Type': 'application/x-www-form-urlencoded',
+            //     },  body: JSON.stringify(data)
+            //   });
+            //     e.preventDefault();
+            // }
+            //         })
+
+            //   document.getElementById("rzp").onclick = function (e) {
+            //     console.log();
+            //     let data = {
+            //       email: document.getElementById("email").value,
+            //       password: document.getElementById("password").value,
+            //       name: document.getElementById("name").value,
+            //       companyName: document.getElementById("companyName").value,
+            //       mobileNumber: document.getElementById("mobileNumber").value,
+            //     };
+            //     fetch("/saveUser", {
+            //       method: "post",
+            //       headers: {
+            //         "Content-Type": "application/json",
+            //         // 'Content-Type': 'application/x-www-form-urlencoded',
+            //       },
+            //       body: JSON.stringify(data),
+            //     });
+            //     e.preventDefault();
+            //   };
+        </script>
+        <!-- get all addListing -->
+        <!-- <script>
+        let xml=new XMLHttpRequest();
+        xml.open("get","/allAddlistingWithoutLogin",true);
+        xml.send();
+        xml.onload=function(){
+            let jsonbody=JSON.parse(xml.responseText);
+            for (let i = 0; i < jsonbody.length; i++) {
+                const element = jsonbody[i];
+                console.log(element.category);
+                let com = ""
+                
+                let com =`  <div class="row">
+            <div class="wrap-flat-product clearfix">
+              
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/1.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      
+                        <div class="button-product float-left">
+                          <button
+                            type="button"
+                            class="flat-button"
+                            onclick="location.href='#'"
+                          >
+                           ${element.category}
+                          </button>
+                        </div>
+                        <div class="start-review float-right">
+                          <span class="flat-start">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </span>
+                          <a href="#" class="review">( 2 reviewers )</a>
+                        </div>
+                      </div>
+                      <div class="info-product">
+                        <h6 class="title">
+                          <a href="#">${element.businessName}</a>
+                        </h6>
+                     
+                        <a href="#" class="heart">
+                          <i class="fa fa-heart-o"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-product">
+                    <div class="tm">${element.name}</div>
+                   
+                  </div>    
+              </div>
+            
+
+            
+            </div>
+          </div>`
+          document.getElementById("list").innerHTML+=com;
+          console.log(com);
+          
+
+            }
+            console.log(xml.responseText);
+        }
+    </script> -->
+
+        <script>
+            let addListings = new XMLHttpRequest();
+            addListings.open("GET", "/allAddlistingWithoutLogin", true);
+            addListings.send();
+            addListings.onload = function() {
+                console.log("list of add listing", addListings.response);
+                let gallery = new XMLHttpRequest();
+                gallery.open("GET", "/getGallery", true);
+                gallery.send();
+                gallery.onload = function() {
+                    console.log("get gallery", gallery.response);
+                    let jsonImages = JSON.parse(gallery.response);
+                    let jsonListing = JSON.parse(addListings.response);
+                    let com = "";
+                    let footerGal = "";
+                    let galCount = 0;
+                    for (let x in jsonListing) {
+
+                        for (let i in jsonImages) {
+                            if (jsonImages[i].addListingId === jsonListing[x].id) {
+                                //console.log(i, jsonImages[i]);
+                                com = `  <div class="row">
+            <div class="wrap-flat-product clearfix">
+              
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/uploaded_images/${jsonImages[i].photo}" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      
+                        <div class="button-product float-left">
+                          <button
+                            type="button"
+                            class="flat-button"
+                            onclick="location.href='#'"
+                          >
+                           ${jsonListing[x].category}
+                          </button>
+                        </div>
+                        <div class="start-review float-right">
+                          <span class="flat-start">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </span>
+                          <a href="#" class="review">( 2 reviewers )</a>
+                        </div>
+                      </div>
+                      <div class="info-product">
+                        <h6 class="title">
+                          <a href="#">${jsonListing[x].businessName}</a>
+                        </h6>
+                     
+                        <a href="#" class="heart">
+                          <i class="fa fa-heart-o"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-product">
+                    <div class="tm">${jsonListing[x].name}</div>
+                   
+                  </div>    
+              </div>
+            
+
+            
+            </div>
+          </div>`;
+
+                                galCount++;
+                                let footerGal = `<li>
+                    <div class="thumb">
+                      <a href="#" class="effect">
+                        <img src="/images/uploaded_images/${jsonImages[i].photo}" alt="image" />
+                      </a>
+                    </div>
+                  </li>`;
+                                if (galCount <= 6) {
+                                    document.getElementById("footerGalley").innerHTML += footerGal;
+                                }
+                                document.getElementById("list").innerHTML += com;
+                                //console.log(com);
+
+
+                            } else {
+                                com = `  <div class="row">
+            <div class="wrap-flat-product clearfix">
+              
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/1.jpg" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      
+                        <div class="button-product float-left">
+                          <button
+                            type="button"
+                            class="flat-button"
+                            onclick="location.href='#'"
+                          >
+                           ${jsonListing[x].category}
+                          </button>
+                        </div>
+                        <div class="start-review float-right">
+                          <span class="flat-start">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </span>
+                          <a href="#" class="review">( 2 reviewers )</a>
+                        </div>
+                      </div>
+                      <div class="info-product">
+                        <h6 class="title">
+                          <a href="#">${jsonListing[x].businessName}</a>
+                        </h6>
+                     
+                        <a href="#" class="heart">
+                          <i class="fa fa-heart-o"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-product">
+                    <div class="tm">${jsonListing[x].name}</div>
+                   
+                  </div>    
+              </div>
+            
+
+            
+            </div>
+          </div>`
+
+                            }
+
+                        }
+                        document.getElementById("list").innerHTML += com;
+
+                    }
+                };
+            };
+        </script>
+
+        <!--get  gallery  -->
+        <!-- <script>
+      let gallery = new XMLHttpRequest();
+      gallery.open("GET", "/getGallery", true);
+      gallery.send();
+      gallery.onload = function () {
+        console.log("get gallery", gallery.response);
+      };
+    </script> -->
+        <!-- get listing -->
+        <script>
+            let form = document.getElementById("searchform");
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                document.getElementById("searchlist2").innerHTML = "";
+                let formdata = new FormData(this);
+                fetch("/search", {
+                    method: "post",
+                    body: formdata,
+
+                }).then(function(response) {
+                    return response.text();
+                }).then(function(text) {
+
+
+                    let gallery = new XMLHttpRequest();
+                    gallery.open("GET", "/getGallery", true);
+                    gallery.send();
+                    gallery.onload = function() {
+                        console.log("get gallery", gallery.response);
+                        let jsonImages = JSON.parse(gallery.response);
+                        let jsonListing = JSON.parse(text);
+                        let divs = '';
+
+                        for (let x in jsonListing) {
+
+                            for (let i in jsonImages) {
+                                console.log("compare", jsonImages[i].addListingId, jsonListing[x].id);
+
+                                if (jsonImages[i].addListingId == jsonListing[x].id) {
+                                    console.log("inside image");
+
+                                    div = `
+      <div class="wrap-flat-product clearfix">          
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/uploaded_images/${jsonImages[i].photo}" alt="image" />
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      
+                        <div class="button-product float-left">
+                          <button
+                            type="button"
+                            class="flat-button"
+                            onclick="location.href='#'"
+                          >
+                         ${jsonListing[x].category} 
+                          </button>
+                        </div>
+                        <div class="start-review float-right">
+                          <span class="flat-start">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </span>
+                          <a href="#" class="review">( 2 reviewers )</a>
+                        </div>
+                      </div>
+                      <div class="info-product">
+                        <h6 class="title">
+                          <a href="#">${jsonListing[x].businessName}</a>
+                        </h6>
+                        <p>${jsonListing[x].address}</p>
+                        <a href="#" class="heart">
+                          <i class="fa fa-heart-o"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-product">
+                    <div class="tm">${jsonListing[x].name}</div>
+                    <div class="text">
+                      <p>
+                        ${jsonListing[x].description}
+                      </p>
+                    </div>
+                  </div>    
+              </div> 
+            
+          </div>`;
+                                    document.getElementById("searchlist2").innerHTML += div;
+                                } else {
+                                    div = `
+      <div class="wrap-flat-product clearfix">          
+              <div class="flat-product">
+                <div class="featured-product">
+                  <img src="/images/services/1.jpg" alt="image" />
+
+                  <div class="rate-product">
+                    <div class="link-review clearfix">
+                      
+                        <div class="button-product float-left">
+                          <button
+                            type="button"
+                            class="flat-button"
+                            onclick="location.href='#'"
+                          >
+                         ${jsonListing[x].category} 
+                          </button>
+                        </div>
+                        <div class="start-review float-right">
+                          <span class="flat-start">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </span>
+                          <a href="#" class="review">( 2 reviewers )</a>
+                        </div>
+                      </div>
+                      <div class="info-product">
+                        <h6 class="title">
+                          <a href="#">${jsonListing[x].businessName}</a>
+                        </h6>
+                        <p>${jsonListing[x].address}</p>
+                        <a href="#" class="heart">
+                          <i class="fa fa-heart-o"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-product">
+                    <div class="tm">${jsonListing[x].name}</div>
+                    <div class="text">
+                      <p>
+                        ${jsonListing[x].description}
+                      </p>
+                    </div>
+                  </div>    
+              </div> 
+            
+          </div>`;
+                                }
+
+                            }
+                            document.getElementById("searchlist2").innerHTML += div;
+
+                        }
+
+                    }
+
+
+
+                });
+            });
+
+            function myFunction() {
+                alert("Please Register first, to Add Listings!");
+            }
+        </script>
+        <!-- save user -->
+        <script>
+            const emailError = document.querySelector(".email.error");
+            const passwordError = document.querySelector(".password.error");
+            const mobileNumber = document.querySelector(".mobileNumber.error");
+
+            document
+                .getElementById("saveUser")
+                .addEventListener("submit", async function(e) {
+                    e.preventDefault();
+                    mobileNumber.textContent = "";
+                    emailError.textContent = "";
+                    passwordError.textContent = "";
+                    console.log("save user");
+                    let formData = new FormData(this);
+
+                    const rawResponse = await fetch("/saveUser", {
+                        method: "post",
+                        body: formData,
+                    });
+                    const content = await rawResponse.json();
+                    console.log(content);
+                    if (content.plan) {
+                        alert("Please follow the link sent to you on email!");
+                        document.getElementById('rzp').style.display = 'none';
+
+                    }
+                    if (content.error) {
+                        console.log("inside error", content.error);
+
+                        emailError.textContent = content.error.email;
+                        passwordError.textContent = content.error.password;
+                        mobileNumber.textContent = content.error.mobileNumber;
+                    }
+                });
+        </script>
+        <!-- fetch req for sign in   -->
+        <script>
+            let email1Error = document.querySelector(".email1.error");
+            let password1Error = document.querySelector(".password1.error");
+
+            document
+                .getElementById("signIn")
+                .addEventListener("submit", async function(e) {
+                    e.preventDefault();
+                    console.log("inside signIn");
+                    let formData1 = new FormData(this);
+                    const signIn = await fetch("/signIn", {
+                        method: "post",
+                        body: formData1,
+                    });
+                    const signInresponse = await signIn.json();
+
+                    if (signInresponse.user && signInresponse.plan) {
+                        location.href = "/renewSubscription/" + signInresponse.user;
+                    } else if (signInresponse.user) {
+                        location.href = "/homeAfterLogin/" + signInresponse.user;
+                    } else if (signInresponse.error) {
+                        email1Error.textContent = signInresponse.error.email;
+                        password1Error.textContent = signInresponse.error.password;
+                    }
+
+                    console.log(signInresponse);
+                });
+        </script>
+</body>
+
+</html>

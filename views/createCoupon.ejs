@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <!--<![endif]-->
+
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+    <title>ListAny Template</title>
+
+    <meta name="author" content="themesflat.com" />
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css" />
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon and touch icons  -->
+    <link
+      href="icon/apple-touch-icon-48-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+      sizes="48x48"
+    />
+    <link
+      href="icon/apple-touch-icon-32-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+    />
+    <link href="icon/favicon.png" rel="shortcut icon" />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .CouponDetails {
+        margin: 40px;
+        overflow-y: auto;
+      }
+
+      .CouponDetails thead th {
+        color: #e8280b;
+        font-weight: bold;
+      }
+
+      .footer {
+      }
+
+      .createcoupon {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      /* .createcoupon input {
+            width: 19%;
+        } */
+
+      .createcoupon button {
+        /* border: 5px solid black; */
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+
+      .createcoupon form {
+        width: 100%;
+      }
+
+      .createcoupon .set {
+        width: 18%;
+        border: 1px solid black;
+      }
+
+      .menu li a {
+        text-decoration: none;
+      }
+
+      .home a {
+        color: #e8280b;
+      }
+
+      .user a {
+        color: #e8280b;
+      }
+
+      .plan a {
+        color: #e8280b;
+      }
+
+      .password {
+        margin: 5px;
+        margin-left: 30px;
+        border-radius: 5px;
+      }
+
+      .password button {
+        border-radius: 20px;
+        font-size: 12px;
+      }
+
+      .passwordLi {
+        margin-left: 250px;
+      }
+    </style>
+  </head>
+
+  <body class="header_sticky">
+    <!-- Preloader -->
+    <section class="loading-overlay">
+      <div class="Loading-Page">
+        <h2 class="loader">Loading</h2>
+      </div>
+    </section>
+
+    <!-- Boxed -->
+    <div class="boxed">
+      <!-- Header -->
+      <header id="header" class="header clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div id="log" class="log float-left">
+                <a href="index.html" rel="home">
+                  <img
+                    src="/images/newlogo.png"
+                    alt="image"
+                    width="200px"
+                    height="200px"
+                  />
+                </a>
+              </div>
+              <!-- /.logo -->
+              <div class="btn-menu">
+                <span></span>
+              </div>
+              <!-- //mobile menu button -->
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-8">
+              <div class="nav-wrap">
+                <nav id="mainnav" class="mainnav float-left">
+                  <ul class="menu">
+                    <li class="home">
+                      <a
+                        href="http://localhost:3000/admin/createCoupon/User.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="user">
+                      <a href="http://localhost:3000/admin/getAllUsers/"
+                        >User</a
+                      >
+                    </li>
+
+                    <li class="user">
+                      <a href="/logOut">log out</a>
+                    </li>
+
+                    <li class="passwordLi">
+                      <div class="password">
+                        <button style="text-decoration: none; color: white">
+                          <a
+                            href="/admin/changePasswordForLogin/<%=email%>"
+                            style="text-decoration: none; color: white"
+                          >
+                            Change Password
+                          </a>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <!-- /.menu -->
+                </nav>
+                <!-- /.mainnav -->
+              </div>
+              <!-- /.nav-wrap -->
+            </div>
+            <!-- /.col-lg-8 -->
+          </div>
+          <!-- /.row -->
+        </div>
+      </header>
+      <!-- /.header -->
+
+      <div class="CouponDetails">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Coupon</th>
+              <th scope="col">Coupon Name</th>
+              <th scope="col">Coupon Expire</th>
+              <th scope="col">Allowed Users</th>
+              <th scope="col">Status</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Expire coupons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(var i=0; i < allCoupons.length; i++) { %>
+            <tr>
+              <th scope="row"><%= [i+1] %></th>
+
+              <td><%= allCoupons[i].coupon %></td>
+              <td><%= allCoupons[i].couponName %></td>
+              <td><%= allCoupons[i].couponExpire %></td>
+              <td><%= allCoupons[i].noOfAllowedUser %></td>
+              <td><%= allCoupons[i].status %></td>
+              <td><%= allCoupons[i].couponAmount %></td>
+              <!-- <td>
+                                <%= allCoupons[i].couponAmount %>
+                            </td> -->
+
+              <td>
+                <a href="/deleteCoupon/<%= allCoupons[i].coupon %>/<%=email%>"
+                  >Expire coupon</a
+                >
+              </td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="createcoupon">
+        <form method="post" action="/admin/generateCoupon/<%=email%>">
+          <input
+            type="text"
+            name="couponName"
+            id="couponname"
+            class="set"
+            placeholder="enter couon code "
+          />
+          <input type="date" name="couponExpire" id="coupondate" class="set" />
+          <input
+            type="number"
+            name="couponAmount"
+            id="couponamount"
+            placeholder=" Discount %"
+            class="set"
+          />
+          <input
+            type="number"
+            name="noOfAllowedUser"
+            id="couponamount"
+            class="set"
+            placeholder="No. of users that can use this coupon "
+          />
+
+          <button type="submit">Create Coupon</button>
+        </form>
+      </div>
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Javascript -->
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/tether.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery.easing.js"></script>
+    <script src="/javascript/jquery-waypoints.js"></script>
+    <script src="/javascript/jquery-countTo.js"></script>
+    <script src="/javascript/owl.carousel.js"></script>
+    <script src="/javascript/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="/javascript/parallax.js"></script>
+    <script src="/javascript/bootstrap-slider.min.js"></script>
+    <script src="/javascript/smoothscroll.js"></script>
+
+    <script src="/javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="revolution/js/slider.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script>
+      function deleteCoupon(coupon) {
+        console.log("delete coupon " + coupon);
+        fetch("/deleteCoupon/" + coupon, {
+          method: "post",
+        })
+          .then(function (response) {
+            console.log(response);
+          })
+          .then(function (text) {
+            console.log(text);
+          });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    /><![endif]-->
+    <title>BCC</title>
+
+    <meta name="author" content="themesflat.com" />
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css" />
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css" />
+
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="/revolution/css/layers.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/revolution/css/settings.css"
+    />
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css" />
+
+    <!-- Favicon and touch icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="/icon/apple-touch-icon-48-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+      sizes="48x48"
+    />
+    <link
+      href="/icon/apple-touch-icon-32-precomposed.png"
+      rel="apple-touch-icon-precomposed"
+    />
+    <link href="/icon/favicon.png" rel="shortcut icon" />
+
+    <style>
+      .card-pricing.popular {
+        z-index: 1;
+        border: 3px solid #007bff;
+      }
+
+      .card-pricing .list-unstyled li {
+        padding: 0.5rem 0;
+        color: #6c757d;
+      }
+
+      .back {
+        margin: 5px;
+        margin-left: 30px;
+        border-radius: 5px;
+      }
+
+      .back button {
+        border-radius: 20px;
+        font-size: 22px;
+      }
+    </style>
+    <!-- razorpay -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <!-- ajex search bar -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+
+    <script src="/javascript/bootstrap3-typeahead.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body class="header_sticky">
+    <div class="back">
+      <button style="text-decoration: none; color: white">
+        <a
+          href="http://localhost:3000/homeAfterLogin/muskan@gmail.com"
+          style="text-decoration: none; color: white"
+        >
+          Back
+        </a>
+      </button>
+    </div>
+    <!-- <input type="text" id="email" value="<%=email%>" />
+    <form id="applyCoupon">
+      <input type="text" name="coupon" />
+      <button type="submit">apply coupon</button>
+    </form> -->
+
+    <h3 id="couponResult"></h3>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container mb-5 mt-5">
+      <div class="pricing card-deck flex-column flex-md-row mb-3">
+        <div class="card card-pricing text-center px-3 mb-4">
+          <span
+            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"
+            >Starter</span
+          >
+          <div class="bg-transparent card-header pt-4 border-0">
+            <h1
+              class="h1 font-weight-normal text-primary text-center mb-0"
+              data-pricing-value="15"
+            >
+              Rs<span class="price" id="starterPrice">3</span
+              ><span class="h6 text-muted ml-2">/ per year</span>
+            </h1>
+          </div>
+          <div class="card-body pt-0">
+            <ul class="list-unstyled mb-4">
+              <li id="starterAddListing">Up to 5 users</li>
+            </ul>
+            <button
+              type="button"
+              id="rzp-button"
+              class="btn btn-outline-secondary mb-3"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4">
+          <span
+            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"
+            >Professional</span
+          >
+          <div class="bg-transparent card-header pt-4 border-0">
+            <h1
+              class="h1 font-weight-normal text-primary text-center mb-0"
+              data-pricing-value="30"
+            >
+              Rs<span class="price" id="professionalPrice">6</span
+              ><span class="h6 text-muted ml-2">/ per year</span>
+            </h1>
+          </div>
+          <div class="card-body pt-0">
+            <ul class="list-unstyled mb-4">
+              <li id="professionalAddListing">Up to 5 users</li>
+            </ul>
+            <a
+              href="https://www.totoprayogo.com"
+              target="_blank"
+              class="btn btn-primary mb-3"
+              id="rzp-button2"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <div class="card card-pricing text-center px-3 mb-4">
+          <span
+            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"
+            >Business</span
+          >
+          <div class="bg-transparent card-header pt-4 border-0">
+            <h1
+              class="h1 font-weight-normal text-primary text-center mb-0"
+              data-pricing-value="45"
+            >
+              Rs<span class="price" id="businessPrice">9</span
+              ><span class="h6 text-muted ml-2">/ per year</span>
+            </h1>
+          </div>
+          <div class="card-body pt-0">
+            <ul class="list-unstyled mb-4">
+              <li id="businessAddListing">Up to 5 users</li>
+            </ul>
+            <button
+              type="button"
+              id="rzp-button3"
+              class="btn btn-outline-secondary mb-3"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+        <!-- <div class="card card-pricing text-center px-3 mb-4">
+          <span
+            class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm"
+            >Enterprise</span
+          >
+          <div class="bg-transparent card-header pt-4 border-0">
+            <h1
+              class="h1 font-weight-normal text-primary text-center mb-0"
+              data-pricing-value="60"
+            >
+              $<span class="price" id="enterprisePrice">12</span
+              ><span class="h6 text-muted ml-2">/ per month</span>
+            </h1>
+          </div>
+          <div class="card-body pt-0">
+            <ul class="list-unstyled mb-4">
+              <li id="enterpriseAddListing">Up to 5 users</li>
+              <li>Basic support on Github</li>
+              <li>Monthly updates</li>
+              <li>Free cancelation</li>
+            </ul>
+            <button
+              type="button"
+              id="rzp-button4"
+              class="btn btn-outline-secondary mb-3"
+            >
+              Order now
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <form
+      id="applyCoupon"
+      style="
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <input type="text" name="coupon" style="width: 322px" />
+      <button type="submit" class="btn btn-primary">apply coupon</button>
+    </form>
+    <div class="text-muted mt-5 mb-5 text-center small">
+      by :
+      <a class="text-muted" target="_blank" href="http://totoprayogo.com"
+        >totoprayogo.com</a
+      >
+    </div>
+
+    <script>
+      generateOrder();
+      function generateOrder() {
+        // fetch to post user
+
+        axios.post("/order/Starter").then((info) => {
+          console.log(info);
+
+          var options = {
+            key: "rzp_test_YALeH69IqswJJf",
+
+            name: "Evren Globals",
+            description: "Test Transaction",
+            image: "/images/evren/evrenLogo.jpg",
+            order_id: info.data.id,
+            callback_url: "/is-order-complete/",
+
+            theme: {
+              color: "#3399cc",
+            },
+          };
+          var rzp1 = new Razorpay(options);
+
+          document.getElementById("rzp-button").onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+          };
+        });
+
+        // professional fee
+
+        axios.post("/order/Professional").then((info) => {
+          console.log(info);
+
+          var options = {
+            key: "rzp_test_YALeH69IqswJJf",
+
+            name: "Evren Globals",
+            description: "Test Transaction",
+            image: "/images/evren/evrenLogo.jpg",
+            order_id: info.data.id,
+            callback_url: "/is-order-complete/",
+
+            theme: {
+              color: "#3399cc",
+            },
+          };
+          var rzp1 = new Razorpay(options);
+
+          document.getElementById("rzp-button2").onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+          };
+        });
+
+        //<!-- Buisness fee -->
+
+        axios.post("/order/Business").then((info) => {
+          console.log(info);
+
+          var options = {
+            key: "rzp_test_YALeH69IqswJJf",
+
+            name: "Evren Globals",
+            description: "Test Transaction",
+            image: "/images/evren/evrenLogo.jpg",
+            order_id: info.data.id,
+            callback_url: "/is-order-complete/",
+
+            theme: {
+              color: "#3399cc",
+            },
+          };
+          var rzp1 = new Razorpay(options);
+
+          document.getElementById("rzp-button3").onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+          };
+        });
+
+        // <!-- Enterprise -->
+
+        axios.post("/order/Enterprise").then((info) => {
+          console.log(info);
+
+          var options = {
+            key: "rzp_test_YALeH69IqswJJf",
+
+            name: "Evren Globals",
+            description: "Test Transaction",
+            image: "/images/evren/evrenLogo.jpg",
+            order_id: info.data.id,
+            callback_url: "/is-order-complete/",
+
+            theme: {
+              color: "#3399cc",
+            },
+          };
+          var rzp1 = new Razorpay(options);
+
+          document.getElementById("rzp-button4").onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+          };
+        });
+      }
+
+      // <!-- get request for subscription plans -->
+
+      showPlans();
+      function showPlans() {
+        const plans = new XMLHttpRequest();
+        plans.open("GET", "/allPlans", true);
+        plans.send();
+        plans.onreadystatechange = function () {
+          let jsonBody = JSON.parse(plans.responseText);
+          console.log(jsonBody.Starter);
+          //starter plan
+          document.getElementById("starterPrice").innerHTML =
+            jsonBody.Starter.price / 100;
+          document.getElementById(
+            "starterAddListing"
+          ).innerHTML = `upto ${jsonBody.Starter.noOfListing} number of listing  `;
+
+          //professional plan
+          document.getElementById("professionalPrice").innerHTML =
+            jsonBody.Professional.price / 100;
+          document.getElementById(
+            "professionalAddListing"
+          ).innerHTML = `upto ${jsonBody.Professional.noOfListing} number of listing  `;
+
+          //business plan
+          document.getElementById("businessPrice").innerHTML =
+            jsonBody.Business.price / 100;
+          document.getElementById(
+            "businessAddListing"
+          ).innerHTML = `upto ${jsonBody.Business.noOfListing} number of listing  `;
+
+          //enterprice plan
+          document.getElementById("enterprisePrice").innerHTML =
+            jsonBody.Enterprise.price / 100;
+          document.getElementById(
+            "enterpriseAddListing"
+          ).innerHTML = `upto ${jsonBody.Enterprise.noOfListing} number of listing  `;
+        };
+      }
+    </script>
+
+    //apply coupon
+    <script>
+      let form = document.getElementById("applyCoupon");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let formData = new FormData(this);
+        fetch("/applyCoupon/<%=email%>", {
+          method: "post",
+          body: formData,
+        })
+          .then(function (response) {
+            showPlans();
+            return response.text();
+          })
+          .then(function (text) {
+            console.log(text);
+            let couponJson = JSON.parse(text);
+            if (couponJson.user) {
+              location.href = "/homeAfterLogin/" + couponJson.user;
+            } else if (couponJson.error) {
+              document.getElementById("couponResult").innerHTML =
+                couponJson.error;
+            }
+            generateOrder();
+            showPlans();
+          });
+      });
+    </script>
+
+    <script></script>
+  </body>
+</html>
